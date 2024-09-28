@@ -1,0 +1,33 @@
+5) Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada. Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?  
+
+R: Muito simples! Ligaria 2 interruptores para verificar quais lâmpadas ficariam ligadas. E depois, ligaria o interruptor desligado e desligaria algum dos interruptores que estavam ligados anteriormente, assim descobrindo qual lâmpada pertence aos respectivos interruptores.
+
+Ex: 
+
+|Int1 = desligado   |Int3 = desligado  |Int2 = desligado
+----------------------------------------------------------
+|Lamp? = desligada  |Lamp? = desligada  |Lamp? = desligada
+
+1° Ida!
+
+|Int1 = ligado   |Int3 = desligado  |Int2 = ligado
+----------------------------------------------------------
+|Lamp? = ligada  |Lamp? = ligado  |Lamp? = desligada
+
+// Anotando as posições 
+|Lamp? = ligada (lado esquedo) |Lamp? = ligado (meio) |Lamp? = desligada
+
+2°Ida!
+
+|Int1 = ligado   |Int3 = ligado  |Int2 = desligado
+----------------------------------------------------------
+|Lamp? = ligada  |Lamp? = desligada  |Lamp? = ligada
+
+//Anotando as posições
+
+|Lamp1 = ligada (lado esquerdo)  |Lamp2 = ligado  |Lamp3 = desligada
+
+|Int1 = ligado   |Int3 = ligado  |Int2 = desligado
+----------------------------------------------------------
+|Lamp1 = ligada  |Lamp2 = desligada  |Lamp3 = ligada
+
