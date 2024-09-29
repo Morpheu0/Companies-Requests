@@ -11,3 +11,5 @@ int main() {
     printf("%d\n", SOMA);  // Imprime o valor de SOMA
     return 0;
 }
+
+// O resultado vai ser 77 
